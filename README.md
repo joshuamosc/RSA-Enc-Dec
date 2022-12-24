@@ -173,7 +173,7 @@ To decrypt a message encrypted you must use the next command.
 > Note: You will need the private key
 
 ```sh
-python3 rsa.py --decrypt "3123+123123+12+33123+123+321+978" -d xxx -n xxx
+python3 rsa.py --decrypt "210+64+28+28+0+216+64+195+28+153+48+64+13+195+6+210+48+86+13+157+0+173+157+195+0+173+27+195+8+86+173+125+6+27+64+173+157+6+0+66" -d xxx -n xxx
 ```
 
 Where:
@@ -189,5 +189,5 @@ n = 253
 d < n
 ```
 ```sh
-python3 rsa.py --encrypt "3123+123123+12+33123+123+321+978" -d 147 -n 253
+python3 rsa.py --decrypt "210+64+28+28+0+216+64+195+28+153+48+64+13+195+6+210+48+86+13+157+0+173+157+195+0+173+27+195+8+86+173+125+6+27+64+173+157+6+0+66" -d 147 -n 253
 ```
