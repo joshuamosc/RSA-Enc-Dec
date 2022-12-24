@@ -1,6 +1,6 @@
 # RSA - Encryptor and Decryptor
 
-This is a python program that encrypts and decrypts data based in the most basic RSA algorithm, where you have a public key and a private key. The public key is used to encrypt the data, this means that this key can be known by everyone, so they can send data encrypted using your public key. The private key is the key to decrypt the data that has been sent to you.
+This is a python program that encrypts and decrypts data, based in the most basic RSA algorithm, where you have a public key and a private key. The public key is used to encrypt the data, this means that this key can be known by everyone, so they can send data encrypted using your public key. The private key is the key to decrypt the data that has been sent to you.
 
 ## Example of keys 
 ***
@@ -24,6 +24,7 @@ Where:
 - C is the ciphered message
 - M is the unciphered message
 - n is the constant explained in this section
+- d is the constant explained in this section
 ```
 
 First you have to search for 2 prime numbers, it's recommended that these numbers are way too big, in this case: p and q, where p ≠ q
@@ -32,7 +33,7 @@ First you have to search for 2 prime numbers, it's recommended that these number
 p = 11 and q = 23
 ``
 
-Then we will want the product of these prime numbers and the euler function:
+Then, we will want the product of these prime numbers and the euler function:
 
 ```
 n = (p)(q)
@@ -65,7 +66,7 @@ d * e = 1(f)
 ***
 
 ```
-Versión mínima Python 3.8
+Minimum Python version 3.8
 pip3
 ```
 
