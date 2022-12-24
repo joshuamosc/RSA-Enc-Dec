@@ -7,7 +7,7 @@ def args():
     parser = argparse.ArgumentParser(
         prog='RSA Enc-Dec',
         description='This is a RSA encryptor, where you need a public key to encrypt a message, and a private key to decrypt it. The public and private key consists of 2 numbers. You will need to pass the values of the variables e and n to encrypt a message or d and n to decrypt it',
-        epilog='All the rights reserved to Negtune'
+        epilog='© 2023 Negtune'
     )
 
     parser.add_argument('-gk', '--generate-keys', action='store_true', help='Generates private and public keys for later use', required=False)

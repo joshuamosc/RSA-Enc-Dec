@@ -1,4 +1,4 @@
-
+from colorama import init, Fore
 # Prime numbers range
 
 from_range = 100
@@ -33,7 +33,9 @@ def generate_prime_numbers():
 
 def write_file(regen):
 
-    print('\n[*] Searching prime numbers file in directory content.')
+    init()
+
+    print(Fore.LIGHTMAGENTA_EX + '\n[*]' + Fore.RESET + ' Searching prime numbers file in directory content.')
     
     exists = file_exists()
 
@@ -41,15 +43,15 @@ def write_file(regen):
 
         try:
             f = open('content/prime_numbers.txt', 'x')
-            print('[*] Creating file.')
+            print(Fore.LIGHTMAGENTA_EX + '[*]' + Fore.RESET + ' Creating file.')
         except:
             pass
 
         try: 
-            print('[*] Calculating prime numbers. This could take a while...')
+            print(Fore.LIGHTYELLOW_EX + '[*]' + Fore.RESET + ' Calculating prime numbers. This could take a while...')
             prime_numbers = generate_prime_numbers()
             f = open('content/prime_numbers.txt', 'w')
-            print('[*] Writing prime numbers to file.\n')
+            print(Fore.LIGHTMAGENTA_EX + '[*]' + Fore.RESET + ' Writing prime numbers to file.\n')
             for x in prime_numbers:
                 f.write('%d\n' % x)
             f.close()
