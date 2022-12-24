@@ -5,7 +5,6 @@ def parse_message(message):
 
     final_message = []
 
-
     message_splitted = [i.lower() for i in message]
 
     for i in message_splitted:

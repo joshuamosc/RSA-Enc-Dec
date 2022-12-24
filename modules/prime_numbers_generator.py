@@ -1,4 +1,9 @@
 
+# Prime numbers range
+
+from_range = 100
+to_range = 200
+
 def file_exists():
 
     file_exists = True
@@ -16,8 +21,8 @@ def generate_prime_numbers():
 
     prime_numbers = []
 
-    for i in range(100, 200):
-        for j in range(1, 200):
+    for i in range(from_range, to_range):
+        for j in range(1, to_range):
             if (i/j).is_integer() == True:
                 counter += 1
         if counter == 2:

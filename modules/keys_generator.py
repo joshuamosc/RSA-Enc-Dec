@@ -14,7 +14,5 @@ def generate_keys():
     e = coprime_calculator.get_coprime(f)[0]
     d = pow(e, -1, f)
     
-
-
     print("[*] Public Key: %d,%d" % (e, n))
     print("[*] Private Key: %d,%d\n" % (d, n))

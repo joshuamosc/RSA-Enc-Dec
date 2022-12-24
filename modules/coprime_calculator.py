@@ -2,6 +2,7 @@
 import random
 
 def calculate_coprime(n):
+
     recn = n
     mcdn = []
     coprimesn = []
@@ -48,9 +49,7 @@ def calculate_coprime(n):
 
     return coprimesn
 
-
 def get_coprime(n1):
-
 
     e = random.choices(calculate_coprime(n1)) # Chooses a random element from the list
 
