@@ -24,6 +24,7 @@ Where:
 - C is the ciphered message
 - M is the unciphered message
 - n is the constant explained in this section
+- e is the constant explained in this section
 - d is the constant explained in this section
 ```
 
